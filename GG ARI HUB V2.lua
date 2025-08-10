@@ -3,7 +3,7 @@ local success, err = pcall(function()
 end)
 
 if success then
-    print("ScAri.lua berhasil dijalankan!")
+    print("ARI HUB V2.lua berhasil dijalankan!")
 else
-    warn("Gagal menjalankan ScAri.lua: ", err)
+    warn("Gagal menjalankan ARI HUB V2.lua: ", err)
 end
