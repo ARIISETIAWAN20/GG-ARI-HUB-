@@ -1,5 +1,18 @@
+-- ===== SECURITY CHECK - Kick if not authorized =====
+local player = game.Players.LocalPlayer
+local allowedUsers = {
+    "Devrenzx",
+    "Vornek2083"
+}
+
+if not table.find(allowedUsers, player.Name) then
+    player:Kick("You are not authorized to use this script.")
+    return -- Hentikan eksekusi script selanjutnya
+end
+
+-- ===== Load ARI HUB V2 =====
 local success, err = pcall(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ARIISETIAWAN20/OPM-ARI-HUB/main/ARI%20HUB%20V2.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ARIISETIAWAN20/OPM-ARI-HUB/main/ARI%20HUB%20V2.lua "))()
 end)
 
 if success then
